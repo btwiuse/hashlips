@@ -24,10 +24,10 @@ const solanaMetadata = {
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 100,
+    growEditionSizeTo: 1000,
     layersOrder: [
-      /*
       { name: "Background" },
+      /*
       { name: "Eyeball" },
       { name: "Eye color" },
       { name: "Iris" },
@@ -35,7 +35,7 @@ const layerConfigurations = [
       { name: "Bottom lid" },
       { name: "Top lid" },
       */
-      { name: "FruitBackground" },
+      // { name: "FruitBackground" },
       { name: "Fruit" },
     ],
   },
@@ -46,8 +46,8 @@ const shuffleLayerConfigurations = false;
 const debugLogs = false;
 
 const format = {
-  width: 512,
-  height: 512,
+  width: 144,
+  height: 144,
   smoothing: false,
 };
 

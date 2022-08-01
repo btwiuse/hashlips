@@ -5,14 +5,14 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.sol;
 
 // General metadata for Ethereum
-const namePrefix = "Non fungible fruits";
-const description = "Collection of frults on Solana.";
+const namePrefix = "Phantom Fruits";
+const description = "Collection of fruits on Solana.";
 const baseUri = "ipfs://NewUriToReplace";
 
 const solanaMetadata = {
-  symbol: "Frutta",
+  symbol: "Phruit",
   seller_fee_basis_points: 1000, // Define how much % you want from secondary market sales 1000 = 10%
-  external_url: "https://frutta.vercel.app",
+  external_url: "https://phruit.art",
   creators: [
     {
       address: "9pRuFihkuA5wzP75xWDoLuLpBhehANoZLrGrySNQRD7T",
@@ -26,8 +26,8 @@ const layerConfigurations = [
   {
     growEditionSizeTo: 1000,
     layersOrder: [
-      { name: "Background" },
       /*
+      { name: "Background" },
       { name: "Eyeball" },
       { name: "Eye color" },
       { name: "Iris" },
@@ -36,6 +36,7 @@ const layerConfigurations = [
       { name: "Top lid" },
       */
       // { name: "FruitBackground" },
+      { name: "Phantom" },
       { name: "Fruit" },
     ],
   },
@@ -46,8 +47,8 @@ const shuffleLayerConfigurations = false;
 const debugLogs = false;
 
 const format = {
-  width: 144,
-  height: 144,
+  width: 512,
+  height: 512,
   smoothing: false,
 };
 

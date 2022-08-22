@@ -5,14 +5,14 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.sol;
 
 // General metadata for Ethereum
-const namePrefix = "Phantom Fruits";
-const description = "Collection of fruits on Solana.";
+const namePrefix = "Zodiac Warriors";
+const description = "Collection of Zodiac Warriors.";
 const baseUri = "ipfs://NewUriToReplace";
 
 const solanaMetadata = {
-  symbol: "Phruit",
+  symbol: "Zodiac",
   seller_fee_basis_points: 1000, // Define how much % you want from secondary market sales 1000 = 10%
-  external_url: "https://phruit.art",
+  external_url: "https://zodiac.worriors",
   creators: [
     {
       address: "9pRuFihkuA5wzP75xWDoLuLpBhehANoZLrGrySNQRD7T",
@@ -24,7 +24,7 @@ const solanaMetadata = {
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 100 * 10,
+    growEditionSizeTo: 10 * 10,
     layersOrder: [
       /*
       { name: "Background" },
@@ -36,8 +36,13 @@ const layerConfigurations = [
       { name: "Top lid" },
       */
       // { name: "FruitBackground" },
-      { name: "Phantom" },
-      { name: "Fruit" },
+      // { name: "Phantom" },
+      // { name: "Fruit" },
+      { name: "1背景" },
+      { name: "2主躯干" },
+      { name: "3发型及配饰" },
+      { name: "4服饰" },
+      { name: "5五官及配饰" },
     ],
   },
 ];

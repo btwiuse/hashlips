@@ -6,13 +6,13 @@ const network = NETWORK.sol;
 
 // General metadata for Ethereum
 const namePrefix = "Zodiac Warriors";
-const description = "Collection of Zodiac Warriors.";
+const description = "Zodiac World Warrior by Cosmos Studios.";
 const baseUri = "ipfs://NewUriToReplace";
 
 const solanaMetadata = {
   symbol: "Zodiac",
   seller_fee_basis_points: 1000, // Define how much % you want from secondary market sales 1000 = 10%
-  external_url: "https://zodiac.worriors",
+  external_url: "https://zodiacnft.world",
   creators: [
     {
       address: "9pRuFihkuA5wzP75xWDoLuLpBhehANoZLrGrySNQRD7T",
@@ -24,7 +24,7 @@ const solanaMetadata = {
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 10 * 10,
+    growEditionSizeTo: 2,
     layersOrder: [
       /*
       { name: "Background" },
@@ -34,7 +34,6 @@ const layerConfigurations = [
       { name: "Shine" },
       { name: "Bottom lid" },
       { name: "Top lid" },
-      */
       // { name: "FruitBackground" },
       // { name: "Phantom" },
       // { name: "Fruit" },
@@ -43,6 +42,8 @@ const layerConfigurations = [
       { name: "3发型及配饰" },
       { name: "4服饰" },
       { name: "5五官及配饰" },
+      */
+      { name: "zodiac2" },
     ],
   },
 ];
